@@ -234,7 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = form.querySelector('.btn-submit');
       const originalText = btn.textContent;
 
-      btn.textContent = 'Envoy\u00e9 \u2713';
+      const isEnglish = document.documentElement.lang === 'en';
+      btn.textContent = isEnglish ? 'Sent \u2713' : 'Envoy\u00e9 \u2713';
       btn.style.background = '#4A6138';
       btn.style.color = '#F5EDDA';
       btn.style.transform = 'scale(0.98)';

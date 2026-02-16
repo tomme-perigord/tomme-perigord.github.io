@@ -266,6 +266,43 @@ a {
   left: 16px;
 }
 
+/* Language switcher */
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.lang-active {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ocre);
+}
+
+.lang-sep {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  color: rgba(245, 237, 218, 0.25);
+}
+
+.lang-link {
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(245, 237, 218, 0.45);
+  transition: color 0.3s;
+}
+
+.lang-link:hover {
+  color: var(--ocre);
+}
+
 /* Mobile burger */
 .burger {
   display: none;
@@ -2126,6 +2163,14 @@ a {
 
   .container {
     padding: 0 24px;
+  }
+
+  .lang-switcher {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0;
   }
 
   .burger {
