@@ -2952,3 +2952,147 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+/* ============================================
+   BLOG ARTICLE PAGES (blog/*.html)
+   ============================================ */
+
+/* --- Hero (compact, with image) --- */
+.blog-article-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--noir);
+  padding-top: var(--header-height);
+}
+
+.blog-article-hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+.blog-article-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, var(--noir) 0%, rgba(20, 12, 8, 0.3) 50%, rgba(20, 12, 8, 0.6) 100%);
+}
+
+.blog-article-hero-content {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  padding: 60px 30px 56px;
+  max-width: 800px;
+}
+
+.blog-article-hero-content .ldf-breadcrumb {
+  margin-bottom: 28px;
+}
+
+.blog-article-date {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ocre);
+  margin-bottom: 16px;
+  display: block;
+}
+
+.blog-article-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  color: var(--creme);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.blog-article-title em {
+  font-style: italic;
+  color: var(--ocre-pale);
+  font-weight: 300;
+}
+
+/* --- Article body --- */
+.blog-article {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 72px 36px 96px;
+}
+
+.blog-article p {
+  font-size: 1.05rem;
+  line-height: 1.95;
+  color: var(--brun-medium);
+  margin-bottom: 24px;
+}
+
+.blog-article p:last-child {
+  margin-bottom: 0;
+}
+
+.blog-article a {
+  color: var(--ocre-dark);
+  border-bottom: 1px solid rgba(196, 162, 78, 0.3);
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.blog-article a:hover {
+  color: var(--ocre);
+  border-bottom-color: var(--ocre);
+}
+
+.blog-article strong {
+  color: var(--brun);
+  font-weight: 600;
+}
+
+.blog-article blockquote {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--brun);
+  line-height: 1.6;
+  border-left: 2px solid var(--ocre);
+  padding-left: 28px;
+  margin: 36px 0;
+  position: relative;
+}
+
+/* --- Back CTA --- */
+.blog-article-back {
+  text-align: center;
+  padding: 0 36px 96px;
+}
+
+/* ============================================
+   RESPONSIVE — Blog article pages
+   ============================================ */
+@media (max-width: 768px) {
+  .blog-article-hero {
+    min-height: auto;
+    padding-top: var(--header-height);
+  }
+
+  .blog-article-hero-content {
+    padding: 40px 24px 44px;
+  }
+
+  .blog-article {
+    padding: 48px 24px 64px;
+  }
+
+  .blog-article-back {
+    padding: 0 24px 64px;
+  }
+}
