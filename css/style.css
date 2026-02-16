@@ -2270,12 +2270,12 @@ a {
   width: auto;
   display: inline-block;
   vertical-align: middle;
-  filter: brightness(0) invert(1) opacity(0.7);
-  transition: filter 0.3s;
+  opacity: 0.85;
+  transition: opacity 0.3s;
 }
 
 .hero-badge.ldf-link:hover .badge-logo-ldf {
-  filter: brightness(0) invert(1) opacity(1);
+  opacity: 1;
 }
 
 .fromage-ldf-logo {
@@ -2283,8 +2283,7 @@ a {
   width: auto;
   margin-bottom: 22px;
   display: block;
-  filter: brightness(0) invert(0.85);
-  opacity: 0.8;
+  opacity: 0.9;
   transition: opacity 0.4s;
 }
 
@@ -2325,7 +2324,6 @@ a {
 .foin-logo-img {
   width: 54px;
   height: auto;
-  filter: brightness(0.5) sepia(1) hue-rotate(50deg) saturate(0.6);
 }
 
 .ldf-link {
@@ -2413,8 +2411,7 @@ a {
 .ldf-hero-logo-main {
   height: 80px;
   width: auto;
-  filter: brightness(0) invert(1);
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .ldf-hero-logo-stg {
