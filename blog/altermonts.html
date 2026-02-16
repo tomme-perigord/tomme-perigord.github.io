@@ -46,13 +46,24 @@
 
   <!-- ==================== HERO ==================== -->
   <section class="blog-article-hero">
-    <img src="../images/altermonts.jpg" alt="Visite de la fromagerie AlterMonts" class="blog-article-hero-img">
+    <div class="blog-carousel">
+      <div class="blog-carousel-track">
+        <div class="blog-carousel-slide active">
+          <img src="../images/altermonts.jpg" alt="Visite de la fromagerie AlterMonts">
+        </div>
+      </div>
+      <button class="blog-carousel-prev" aria-label="Précédent">&#8249;</button>
+      <button class="blog-carousel-next" aria-label="Suivant">&#8250;</button>
+      <div class="blog-carousel-dots">
+        <button class="blog-carousel-dot active" aria-label="Diapositive 1"></button>
+      </div>
+    </div>
     <div class="blog-article-hero-overlay"></div>
     <div class="blog-article-hero-content">
       <nav class="ldf-breadcrumb" aria-label="Fil d'Ariane">
         <a href="../index.html">Accueil</a>
         <span class="ldf-breadcrumb-sep">/</span>
-        <a href="../index.html#actualites">Actualités</a>
+        <a href="./">Actualités</a>
         <span class="ldf-breadcrumb-sep">/</span>
         <span>AlterMonts</span>
       </nav>
@@ -116,7 +127,7 @@
 
   <!-- ==================== BACK CTA ==================== -->
   <div class="blog-article-back">
-    <a href="../index.html" class="btn-rejoindre">Retour au site &larr;</a>
+    <a href="./" class="btn-rejoindre">Retour aux actualités &larr;</a>
   </div>
 
   <!-- ==================== FOOTER ==================== -->
