@@ -1272,6 +1272,8 @@ a {
   color: var(--ocre);
   margin-bottom: 20px;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .constat-item h4 {
