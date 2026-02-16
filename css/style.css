@@ -2261,3 +2261,650 @@ a {
     font-size: 0.7rem;
   }
 }
+
+/* ============================================
+   LAIT DE FOIN — Inline logo utilities (index.html)
+   ============================================ */
+.badge-logo-ldf {
+  height: 20px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  filter: brightness(0) invert(1) opacity(0.7);
+  transition: filter 0.3s;
+}
+
+.hero-badge.ldf-link:hover .badge-logo-ldf {
+  filter: brightness(0) invert(1) opacity(1);
+}
+
+.fromage-ldf-logo {
+  height: 48px;
+  width: auto;
+  margin-bottom: 22px;
+  display: block;
+  filter: brightness(0) invert(0.85);
+  opacity: 0.8;
+  transition: opacity 0.4s;
+}
+
+.fromage-card:hover .fromage-ldf-logo {
+  opacity: 1;
+}
+
+.inline-ldf-logo {
+  height: 16px;
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+.btn-ldf-more {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ocre);
+  margin-top: 18px;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(196, 162, 78, 0.25);
+  transition: border-color 0.3s, letter-spacing 0.3s var(--ease-out-expo);
+  position: relative;
+  z-index: 1;
+}
+
+.btn-ldf-more:hover {
+  border-bottom-color: var(--ocre);
+  letter-spacing: 3px;
+}
+
+.foin-logo-img {
+  width: 54px;
+  height: auto;
+  filter: brightness(0.5) sepia(1) hue-rotate(50deg) saturate(0.6);
+}
+
+.ldf-link {
+  transition: color 0.3s;
+}
+
+.ldf-link:hover {
+  color: var(--ocre) !important;
+}
+
+.ldf-more-link {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--vert-foin);
+  margin-top: 24px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(122, 138, 50, 0.3);
+  transition: border-color 0.3s, letter-spacing 0.3s var(--ease-out-expo);
+}
+
+.ldf-more-link:hover {
+  border-bottom-color: var(--vert-foin);
+  letter-spacing: 3px;
+}
+
+/* ============================================
+   LAIT DE FOIN — Dedicated page (lait-de-foin.html)
+   ============================================ */
+
+/* --- Hero (compact) --- */
+.ldf-hero {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--noir);
+  padding-top: var(--header-height);
+}
+
+.ldf-hero-content {
+  position: relative;
+  z-index: 4;
+  text-align: center;
+  padding: 60px 30px 80px;
+}
+
+.ldf-breadcrumb {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(245, 237, 218, 0.4);
+  margin-bottom: 36px;
+}
+
+.ldf-breadcrumb a {
+  color: rgba(245, 237, 218, 0.5);
+  transition: color 0.3s;
+}
+
+.ldf-breadcrumb a:hover {
+  color: var(--ocre);
+}
+
+.ldf-breadcrumb-sep {
+  margin: 0 10px;
+  opacity: 0.3;
+}
+
+.ldf-hero-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.ldf-hero-logo-main {
+  height: 80px;
+  width: auto;
+  filter: brightness(0) invert(1);
+  opacity: 0.9;
+}
+
+.ldf-hero-logo-stg {
+  height: 72px;
+  width: auto;
+  opacity: 0.85;
+}
+
+.ldf-hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4.5rem);
+  font-weight: 300;
+  color: var(--creme);
+  line-height: 1.1;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+
+.ldf-hero-subtitle {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--ocre-pale);
+  letter-spacing: 0.5px;
+}
+
+/* --- Definition --- */
+.ldf-definition {
+  padding: var(--section-padding);
+  background: var(--blanc);
+}
+
+.ldf-def-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.ldf-stg-card {
+  padding: 44px 36px;
+  background: var(--creme);
+  border: 1px solid rgba(196, 162, 78, 0.2);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ldf-stg-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--ocre-dark), var(--ocre), var(--ocre-pale));
+}
+
+.ldf-stg-card-logo {
+  height: 64px;
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.ldf-stg-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--brun);
+  margin-bottom: 14px;
+}
+
+.ldf-stg-card p {
+  font-size: 0.92rem;
+  color: var(--brun-medium);
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+.ldf-stg-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ldf-stg-card ul li {
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--brun-medium);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(196, 162, 78, 0.1);
+  padding-left: 20px;
+  position: relative;
+}
+
+.ldf-stg-card ul li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  color: var(--ocre-dark);
+  font-weight: 700;
+}
+
+.ldf-stg-card ul li:last-child {
+  border-bottom: none;
+}
+
+/* --- Importance / Comparison --- */
+.ldf-importance {
+  padding: var(--section-padding);
+  background: var(--brun);
+  color: var(--creme);
+  position: relative;
+  overflow: hidden;
+}
+
+.ldf-importance::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(196, 162, 78, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(196, 162, 78, 0.04) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.ldf-importance .container {
+  position: relative;
+  z-index: 1;
+}
+
+.ldf-importance-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.ldf-importance-img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgba(196, 162, 78, 0.15);
+}
+
+.ldf-importance blockquote {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.6;
+  border-left: 2px solid var(--ocre);
+  padding-left: 24px;
+  margin-top: 28px;
+}
+
+.ldf-comparison {
+  padding: 52px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(196, 162, 78, 0.1);
+  border-radius: 8px;
+}
+
+.ldf-comparison h3 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--ocre);
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.ldf-compare-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.ldf-compare-col {
+  padding: 32px 28px;
+  border-radius: 6px;
+}
+
+.ldf-compare-good {
+  background: rgba(74, 97, 56, 0.12);
+  border: 1px solid rgba(74, 97, 56, 0.25);
+}
+
+.ldf-compare-bad {
+  background: rgba(196, 60, 60, 0.06);
+  border: 1px solid rgba(196, 60, 60, 0.15);
+}
+
+.ldf-compare-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ldf-compare-header span {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--creme);
+}
+
+.ldf-compare-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ldf-compare-col ul li {
+  font-size: 0.88rem;
+  color: var(--creme-dark);
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 0.85;
+}
+
+.ldf-check {
+  color: var(--vert-foin);
+  font-weight: 700;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.ldf-cross {
+  color: #c44;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* --- 4 Piliers --- */
+.ldf-piliers {
+  padding: var(--section-padding);
+  background: var(--blanc);
+}
+
+.ldf-piliers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 56px;
+}
+
+.ldf-pilier-card {
+  padding: 36px 28px;
+  background: var(--creme);
+  border: 1px solid rgba(196, 162, 78, 0.15);
+  border-radius: 6px;
+  transition: all 0.5s var(--ease-out-expo);
+  position: relative;
+  overflow: hidden;
+}
+
+.ldf-pilier-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--ocre), transparent);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.ldf-pilier-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(42, 24, 16, 0.08);
+  border-color: rgba(196, 162, 78, 0.3);
+}
+
+.ldf-pilier-card:hover::before {
+  opacity: 1;
+}
+
+.ldf-pilier-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 18px;
+}
+
+.ldf-pilier-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--brun);
+  margin-bottom: 12px;
+}
+
+.ldf-pilier-card p {
+  font-size: 0.88rem;
+  color: var(--brun-medium);
+  line-height: 1.7;
+}
+
+/* --- Vidéo --- */
+.ldf-video {
+  padding: var(--section-padding);
+  background: var(--noir);
+  color: var(--creme);
+  position: relative;
+  overflow: hidden;
+}
+
+.ldf-video-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.5) 100%);
+  pointer-events: none;
+}
+
+.ldf-video .section-title {
+  color: var(--creme);
+}
+
+.ldf-video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(196, 162, 78, 0.15);
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.4);
+}
+
+.ldf-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --- Resources --- */
+.ldf-resources {
+  padding: var(--section-padding);
+  background: var(--blanc);
+}
+
+.ldf-resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ldf-resource-card {
+  display: block;
+  padding: 36px 32px;
+  background: var(--creme);
+  border: 1px solid rgba(196, 162, 78, 0.15);
+  border-radius: 8px;
+  transition: all 0.5s var(--ease-out-expo);
+  text-decoration: none;
+}
+
+.ldf-resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(42, 24, 16, 0.08);
+  border-color: rgba(196, 162, 78, 0.35);
+}
+
+.ldf-resource-logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 18px;
+  opacity: 0.8;
+}
+
+.ldf-resource-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--brun);
+  color: var(--ocre);
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+.ldf-resource-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--brun);
+  margin-bottom: 10px;
+}
+
+.ldf-resource-card p {
+  font-size: 0.88rem;
+  color: var(--brun-medium);
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+.ldf-resource-link {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ocre-dark);
+  transition: color 0.3s;
+}
+
+.ldf-resource-card:hover .ldf-resource-link {
+  color: var(--ocre);
+}
+
+/* --- Back CTA --- */
+.ldf-back-cta {
+  text-align: center;
+  margin-top: 56px;
+}
+
+/* ============================================
+   RESPONSIVE — Lait de Foin page
+   ============================================ */
+@media (max-width: 1024px) {
+  .ldf-def-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .ldf-importance-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .ldf-compare-table {
+    grid-template-columns: 1fr;
+  }
+
+  .ldf-piliers-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ldf-hero {
+    min-height: auto;
+    padding-top: var(--header-height);
+  }
+
+  .ldf-hero-content {
+    padding: 40px 24px 60px;
+  }
+
+  .ldf-hero-logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ldf-hero-logo-main {
+    height: 60px;
+  }
+
+  .ldf-hero-logo-stg {
+    height: 56px;
+  }
+
+  .ldf-piliers-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ldf-resources-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ldf-comparison {
+    padding: 28px 20px;
+  }
+
+  .ldf-compare-table {
+    grid-template-columns: 1fr;
+  }
+}

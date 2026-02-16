@@ -62,11 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* --- Active nav link --- */
+  /* --- Active nav link (skip on sub-pages) --- */
+  const isSubPage = document.body.classList.contains('page-ldf');
   const sections = document.querySelectorAll('section[id]');
   const navLinks = document.querySelectorAll('.main-nav a[href^="#"]');
 
   function updateActiveNav() {
+    if (isSubPage) return;
     const scrollPos = window.scrollY + 140;
 
     sections.forEach(section => {
@@ -99,12 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
-  /* --- Smooth scroll for anchor links --- */
+  /* --- Smooth scroll for anchor links (same-page only) --- */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute('href'));
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      const target = document.querySelector(href);
       if (target) {
+        e.preventDefault();
         const offsetTop = target.offsetTop - 80;
         window.scrollTo({
           top: offsetTop,
